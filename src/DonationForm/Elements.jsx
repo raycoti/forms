@@ -9,7 +9,7 @@ export const DonationInput = ({
   title="Give Now"
 }) => {
   return (
-   <span className={styles.donationInput}>
+   <div className={styles.donationInput}>
    $<input
      data-testid="donation-input"
      value={value}
@@ -19,7 +19,7 @@ export const DonationInput = ({
      onChange={onChange}
    />
    <button disabled={!!(+value < 5)} data-testid="donation-button">{title}</button>
- </span>
+ </div>
   )
 }
 

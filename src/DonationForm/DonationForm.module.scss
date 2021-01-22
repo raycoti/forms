@@ -3,29 +3,37 @@
 .header{
   font-family: $title;
   font-size: 2em;
+  line-height: 1.5em;
 }
 
 .text{
   font-family: $body;
   font-size: 1.25em;
   color: $slate-80;
+  line-height: 1.25em;
+  b{
+    color: $black;
+  }
 }
 
 .container{
   width: 100%;
   background-color: $white;
   box-shadow: $slate-80 0px 0px 7px 0px;
-  padding: 2rem .5rem 2rem 2rem;
+  padding: 2rem;
   border-radius: 1rem;
   position: relative;
   form{
     max-width: 30rem;
-    
+    p{
+      max-width: 80%;
+    }
   }
 }
 
 //Donation input
 .donationInput{
+  margin-top: 2em;
   padding-left: 1rem;
   display: flex;
   box-shadow: $slate-80 0px 0px 7px 0px;
@@ -61,6 +69,7 @@
     font-size: 1.25em;
     border: $mint solid 1px;
     border-radius: 0 5px 5px 0;
+    padding: 1rem;
     &:disabled{
       opacity: .5;
       cursor: not-allowed;
@@ -95,10 +104,12 @@
   left: 0;
   z-index: 5;
   width: 100%;
-  background-color: $ocean-60;
+  background-color: $ocean-40;
   color: $ocean;
   padding: 1rem;
   border-radius: 10px;
+  font-family: $body;
+  font-size: 1em;
   &:after{
     content:'';
     display:block;
@@ -106,10 +117,10 @@
     height:0;
     position:absolute;
 
-    border-top: 10px solid $ocean-60;;
+    border-top: 10px solid $ocean-40;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    
+
     right: 20px;
     bottom:-10px;
     
