@@ -1,8 +1,12 @@
 import React from 'react';
+import DonationForm from "./DonationForm";
 import styles from "./app.module.scss";
 
-console.log(styles); 
 const App = () =>
-  <div className={styles.container}>starting point</div>;
+  <div className={styles.main}>
+    <div className={styles.wrapper}>
+      <DonationForm />
+    </div>
+  </div>;
  
 export default App;

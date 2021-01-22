@@ -1,5 +1,15 @@
 @import "./variables.scss";
-.container{
-  background-color: $blue;
-  font-size: 2rem;
+
+*{
+  box-sizing: border-box;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .wrapper{
+    width: 40rem;
+    margin-top: 100px;
+  }
 }
